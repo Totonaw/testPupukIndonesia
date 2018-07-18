@@ -1,0 +1,46 @@
+<div>LIST SALES</div>
+<div>
+    <a href="/sales/insert">Insert Sales</a>
+</div>
+{{#if upd}}
+<div>
+    <p style="color:green">{{upd}}</p>
+</div>
+{{/if}}
+{{#if msg}}
+<div>
+    <p style="color:red">{{msg}}</p>
+</div>
+{{/if}}
+<table>
+    <tr>
+        <td>SO ID</td>
+        <td>Retailer Name</td>
+        <td>Product</td>
+        <td>Price</td>
+        <td>Total Price</td>
+        <td>Action</td>
+    </tr>
+    {{#each data}}
+    <tr>
+        <td>{{so_id}}</td>
+        <td>{{retailer_name}}</td>
+        <td>{{product_name}}</td>
+        <td>{{price}}</td>
+        <td>{{total_price}}</td>
+        <td>
+            <form method="POST" action="/sales/put">
+                <input type="submit" value="PUT">
+                <input type="hidden" value={{so_id}} name="so_id">
+            </form>
+            
+        </td>
+        <td>
+            <form method="POST" action="/sales/delete">
+                <input type="submit" value="DELETE">
+                <input type="hidden" value={{so_id}} name="so_id">
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>

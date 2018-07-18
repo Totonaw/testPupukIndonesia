@@ -1,0 +1,10 @@
+{{#if error}}
+  <div style="color:red">{{error}}</div>
+{{/if}}
+<div>
+  <form action="/login" method="POST">
+    USERNAME : <input type="text" name="username">
+    PASSWORD : <input type="password" name="password">
+    <input type="submit" name="login" >
+  </form>
+</div>

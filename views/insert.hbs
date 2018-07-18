@@ -1,0 +1,34 @@
+<a href="/sales">List Sales</a>
+<div>
+INSERT NEW SALES
+</div>
+{{#if msg}}
+    <div style="color:red">{{msg}}</div>
+{{/if}}
+<div>
+    <form method="POST">
+    <div>
+        Retailer ID : <input type="text" name="retailer_id">
+        </div>
+        <div>Distributor ID : <input type="text" name="distributor_id">
+        </div>
+        <div>Product ID : <input type="text" name="product_id">
+        </div>
+        <div>SO Date : <input type="text" name="so_date">
+        </div>
+        <div>Ordered Qty : <input type="text" name="ordered_qty">
+        </div>
+        <div>Price : <input type="text" name="price">
+        </div>
+        <div>
+            Total Price : <input type="text" name="total_price">
+        </div>
+        <div>
+            SPJB ID : <input type="text" name="spjb_id">
+        </div>
+        <div>
+            Approved QTY : <input type="text" name="approved_qty">
+        </div>
+        <div><input type="submit" name="submit"></div>
+    </form>
+</div>

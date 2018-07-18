@@ -1,0 +1,14 @@
+{
+    "Local_URL": "http://192.168.188.216",
+    "External_URL": "http://118.97.87.142",
+
+    "Oauth":{
+        "grant_type"    : "password",
+        "client_id"     : "2",
+        "client_secret" : "bwOtiLuY6WrFu8eWmmacw03QAScky2Aj5otSCG28"
+    },
+    "Endpoint":{
+        "Login" : "/api_siaga/public/oauth/token",
+        "SalesOrder" : "/api_siaga/public/salesOrders"
+    }
+}
